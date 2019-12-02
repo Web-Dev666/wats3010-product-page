@@ -1,0 +1,27 @@
+/* Site Styles Go Here */
+
+/* footer */
+
+.footer-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-item-flex {
+    flex: 0 1 auto;
+    color: white
+}
+
+/* jumbotron */
+
+/* embeded video */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  article {
+    margin: 1rem 0;
+  }
+
