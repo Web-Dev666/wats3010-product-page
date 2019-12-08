@@ -21,8 +21,10 @@
      </script>
 
      <!-- Favicon -->
-     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-     <link rel="favicon" href="favicon.ico">
+     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+     <link rel="manifest" href="/site.webmanifest">
 
      <!-- Style -->
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
@@ -33,17 +35,18 @@
      <!-- End Bootstrap CSS Framework -->
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
           integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link href="css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
-     <nav class="my-navbar navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+     <nav class="my-navbar navbar navbar-expand-md navbar-dark fixed-top bg-dark nav-query">
           <div><img src="logos/api_superstore_logo_by.png" alt=""></div>
           <a class="navbar-brand" href="#">API Superstore</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-               aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
+          <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+               aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"> -->
+          <!-- <span class="navbar-toggler-icon"></span> -->
           </button>
           <button class="button-color btn btn-outline-success my-2 my-sm-0" type="submit">Sign Up</button>
           </form>
@@ -83,7 +86,7 @@
           </div>
           <hr class="featurette-divider divider-margins">
           <div class="row featurette">
-               <div class="col-md-7 order-md-2">
+               <div class="featurette-margins col-md-7 order-md-2">
                     <h2 class="featurette-heading">SUPER Features <span class="text-muted">that make your life
                               easy</span>
                     </h2>
@@ -95,7 +98,7 @@
                     </ul>
                </div>
                <div class="col-md-5 order-md-1">
-                    <a href="#"><img class="card-img-top" src="images/features.jpg" height="400" width="500"
+                    <a href="#"><img class="card-img-top" src="images/features-2.jpg" height="400" width="500"
                               alt="Man with headphones puts sticky notes on whiteboard"></a>
                </div>
           </div>
@@ -108,7 +111,7 @@
           <!-- Testimonials -->
 
           <div class="row">
-               <div class="col-lg-4 testimonial-padding">
+               <div class="col-lg-4 testimonial-padding smsc-margin">
                     <img src="images/testimonial-1-clara.jpg" class="rounded-circle" width="140" height="140">
                     <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
                          xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
@@ -118,7 +121,8 @@
                          dy=".3em"></text>
                     </svg>
                     <h2>Clara C.</h2>
-                    <p>“Once again, I’m blown away by the amazing offerings of the API Superstore. You really are
+                    <p class="smsc-margin">“Once again, I’m blown away by the amazing offerings of the API Superstore.
+                         You really are
                          SUPER!” </p>
                </div><!-- /.col-lg-4 -->
                <div class="col-lg-4 testimonial-padding">
@@ -150,29 +154,32 @@
           <div class="jumbotron my-jumbotron-2">
                <div class="container">
                     <h1 class="display-3 my-display">Ready to change your life with API?</h1>
-                    <p><a class="btn btn-outline-success" my-2 my-sm-0 href="#" role="button">Let's get started »</a>
+                    <p><a class="btn btn-outline-success button-color animated-button" my-2 my-sm-0 href="#" role="button">Let's get
+                              started »</a>
                     </p>
                </div>
           </div>
-          <footer>
-               <p>Phone: 206.555.1234</p>
-               <p>Email: info@apisuperstore.com</p>
-               <p>Location: Seattle, WA, USA</p>
-               <p>Add Share Links</p>
-          </footer>
-
+          <div class="box">
+                    <i class="fas fa-arrow-right"></i>
+          </div>
+     </div>
+     <footer class="footer-flex">
+          <p class="footer-item-flex">Phone: 206.555.1234</p>
+          <p class="footer-item-flex">Email: info@apisuperstore.com</p>
+          <p class="footer-item-flex">Location: Seattle, WA, USA</p>
+     </footer>
+     <div class="share-links">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-vine"></a>
+          <a href="#" class="fa fa-youtube"></a>
      </div>
 
-     <!-- TODO: Create an area to show features. -->
 
-     <!-- TODO: Create an area to show company contact info (phone,
-             location, etc.) -->
 
      <!-- TODO: Create an area that allows users to Share links to the
              page. -->
 
-     <!-- TODO: Create a call to action link to get users to sign up for the
-             service. -->
 
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
           integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
